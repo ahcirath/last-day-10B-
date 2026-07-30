@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#050505" />
+  <title>Our Last School Day — Grade 10 B</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="film-grain"></div>
+  <div class="vignette"></div>
+  <canvas id="particles"></canvas>
+
+  <section id="startScreen" class="start-screen">
+    <div class="start-card">
+      <p class="eyebrow">ACHIRATH STUDIOS PRESENTS</p>
+      <h1>OUR LAST SCHOOL DAY</h1>
+      <p>Grade 10 B · End of the 2026 School Year</p>
+      <button id="startBtn">▶ START THE MOVIE</button>
+      <small>Click Start to enable music and sound.</small>
+    </div>
+  </section>
+
+  <section id="intro" class="intro hidden">
+    <button id="skipBtn" class="skip-btn">Skip Intro</button>
+    <div id="studioText" class="intro-line">ACHIRATH STUDIOS</div>
+    <div id="presentsText" class="intro-line">PRESENTS</div>
+    <div id="mainTitle" class="intro-title">
+      <span>OUR LAST SCHOOL DAY</span>
+      <small>Grade 10 B</small>
+      <em>End of the 2026 School Year</em>
+      <strong>Every photo holds a story.</strong>
+    </div>
+  </section>
+
+  <main id="movie" class="movie hidden">
+    <header class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">A Grade 10 B Memory Film</p>
+        <h1>OUR LAST SCHOOL DAY</h1>
+        <h2>End of the 2026 School Year</h2>
+        <p>Every photo holds a story.</p>
+      </div>
+      <div class="scroll-hint">Scroll to continue ↓</div>
+    </header>
+
+    <section id="musicSlideshow" class="music-slideshow" aria-label="Music synchronized photo slideshow">
+      <div class="slideshow-stage">
+        <img id="slideA" class="sync-slide active" alt="Grade 10 B memory slideshow" />
+        <img id="slideB" class="sync-slide" alt="Grade 10 B memory slideshow" />
+        <div id="beatFlash" class="beat-flash"></div>
+        <div class="slideshow-shade"></div>
+        <div class="slideshow-caption">
+          <span>MUSIC SYNC MEMORY</span>
+          <h2 id="slideTitle">Every Beat, Another Memory</h2>
+          <p>Photos change with the rhythm of the music.</p>
+        </div>
+        <div class="beat-meter" aria-hidden="true">
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="automaticSlideshow" class="automatic-slideshow" aria-label="Automatic cinematic photo slideshow">
+      <div class="chapter-heading">
+        <span>CINEMATIC MEMORIES</span>
+        <h2>Our Story in Photos</h2>
+        <p>Automatic slideshow with more than 40 cinematic transitions.</p>
+      </div>
+
+      <div id="autoStage" class="auto-stage" tabindex="0" aria-label="Tap or click the photo to zoom">
+        <img id="autoSlideA" class="auto-slide active" alt="Grade 10 B cinematic memory" />
+        <img id="autoSlideB" class="auto-slide" alt="Grade 10 B cinematic memory" />
+        <div class="auto-shade"></div>
+        <div class="auto-caption">
+          <span id="autoCounter">1 / 33</span>
+          <strong id="transitionName">Cinematic Fade</strong>
+          <small>Tap photo to zoom</small>
+        </div>
+        <button id="autoPrev" class="slide-nav prev" aria-label="Previous photo">‹</button>
+        <button id="autoNext" class="slide-nav next" aria-label="Next photo">›</button>
+        <div id="autoDots" class="auto-dots" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section class="chapter">
+      <div class="chapter-heading">
+        <span>CHAPTER ONE</span>
+        <h2>With Our Teacher</h2>
+        <p>The lessons, the advice, and the moments we will always remember.</p>
+      </div>
+      <div id="teacherGallery" class="cinema-gallery"></div>
+    </section>
+
+    <section class="chapter dark-chapter">
+      <div class="chapter-heading">
+        <span>CHAPTER TWO</span>
+        <h2>Funny Classroom Moments</h2>
+        <p>The laughter between lessons became some of our best memories.</p>
+      </div>
+      <div id="funnyGallery" class="polaroid-wall"></div>
+    </section>
+
+    <section class="chapter">
+      <div class="chapter-heading">
+        <span>CHAPTER THREE</span>
+        <h2>Selfies With Friends</h2>
+        <p>Different faces, one unforgettable year.</p>
+      </div>
+      <div id="friendsGallery" class="friends-strip"></div>
+    </section>
+
+    <section class="final-photo-section">
+      <img id="finalClassPhoto" alt="Grade 10 B final class memory" />
+      <div class="final-overlay">
+        <h2>The 2026 school year has come to an end...</h2>
+        <p>
+          But the memories, friendships, and smiles of Grade 10 B
+          will remain in our hearts forever.
+        </p>
+      </div>
+    </section>
+
+    <section class="credits-section">
+      <div class="credits-window">
+        <div class="credits-roll">
+          <h2>OUR LAST SCHOOL DAY</h2>
+          <h3>GRADE 10 B</h3>
+          <p>END OF THE 2026 SCHOOL YEAR</p>
+
+          <div class="credit-block">
+            <span>STARRING</span>
+            <strong>Our Amazing Classmates</strong>
+          </div>
+
+          <div class="credit-block">
+            <span>FEATURING</span>
+            <strong>Our Teacher · Our Friends · Our Memories</strong>
+          </div>
+
+          <div class="credit-block">
+            <span>PHOTOS BY</span>
+            <strong>Grade 10 B</strong>
+          </div>
+
+          <div class="credit-block">
+            <span>CREATED BY</span>
+            <strong>ACHIRATH</strong>
+          </div>
+
+          <div class="credit-block">
+            <span>SPECIAL THANKS</span>
+            <strong>Everyone who made our school journey unforgettable</strong>
+          </div>
+
+          <p class="khmer-credit">
+            Every photo holds a story.<br />
+            Every friendship leaves an unforgettable memory.
+          </p>
+
+          <h2 class="the-end">THE END</h2>
+          <p>Forever in Our Hearts ❤️</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <div id="photoZoomModal" class="photo-zoom-modal" aria-hidden="true">
+    <button id="zoomClose" class="zoom-close" aria-label="Close photo">×</button>
+    <div id="zoomViewport" class="zoom-viewport">
+      <img id="zoomImage" alt="Zoomed school memory" draggable="false" />
+    </div>
+    <div class="zoom-help">Pinch or use the mouse wheel to zoom · Drag to move</div>
+  </div>
+
+  <div class="controls">
+    <button id="musicBtn" title="Play or pause music">⏸</button>
+    <input id="volumeSlider" type="range" min="0" max="1" step="0.01" value="0.65" />
+    <button id="topBtn" title="Back to top">↑</button>
+  </div>
+
+  <audio id="music" loop preload="auto">
+    <source src="assets/audio/background_music.mp3" type="audio/mpeg" />
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
